@@ -46,26 +46,26 @@ exports.generateRssFeed = function () {
       const {data} = matter(content);
       const slug = filePath.split('/').slice(-4).join('/').replace('.md', '');
 
-      if (data.title == null || data.title.trim() === '') {
-        throw new Error(
-          `${id}: Blog posts must include a title in the metadata, for RSS feeds`
-        );
-      }
-      if (data.author == null || data.author.trim() === '') {
-        throw new Error(
-          `${id}: Blog posts must include an author in the metadata, for RSS feeds`
-        );
-      }
-      if (data.date == null || data.date.trim() === '') {
-        throw new Error(
-          `${id}: Blog posts must include a date in the metadata, for RSS feeds`
-        );
-      }
-      if (data.description == null || data.description.trim() === '') {
-        throw new Error(
-          `${id}: Blog posts must include a description in the metadata, for RSS feeds`
-        );
-      }
+      // if (data.title == null || data.title.trim() === '') {
+      //   throw new Error(
+      //     `${id}: Blog posts must include a title in the metadata, for RSS feeds`
+      //   );
+      // }
+      // if (data.author == null || data.author.trim() === '') {
+      //   throw new Error(
+      //     `${id}: Blog posts must include an author in the metadata, for RSS feeds`
+      //   );
+      // }
+      // if (data.date == null || data.date.trim() === '') {
+      //   throw new Error(
+      //     `${id}: Blog posts must include a date in the metadata, for RSS feeds`
+      //   );
+      // }
+      // if (data.description == null || data.description.trim() === '') {
+      //   throw new Error(
+      //     `${id}: Blog posts must include a description in the metadata, for RSS feeds`
+      //   );
+      // }
 
       feed.item({
         id,
